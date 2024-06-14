@@ -1,0 +1,11 @@
+sequenceDiagram
+participant Browser
+participant Server
+
+Note right of Browser: User enters the data in the form and submits it.
+Browser ->> Browser: The callback function runs and the page is redrawn with the new note data added to the page.
+
+
+Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+activate Server
+deactivate Server
